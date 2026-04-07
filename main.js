@@ -15,6 +15,10 @@ window.addEventListener('scroll', () => {
 });
 
 // 스크롤 진입 시 카드 페이드인 애니메이션
+const style = document.createElement('style');
+style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
+document.head.appendChild(style);
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -28,12 +32,6 @@ document.querySelectorAll('.project-card, .info-card, .skill-group').forEach(el 
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const style = document.createElement('style');
-    style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-    document.head.appendChild(style);
 });
 
 // 제휴 문의 폼 AJAX 전송
