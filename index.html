@@ -1,24 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>신선경 | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="theme-toggle">
-            <button id="light-mode">White Mode</button>
-            <button id="dark-mode">Black Mode</button>
+
+    <!-- 네비게이션 -->
+    <nav class="nav">
+        <div class="nav-logo">SSK</div>
+        <ul class="nav-links">
+            <li><a href="#about">소개</a></li>
+            <li><a href="#skills">기술</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    </nav>
+
+    <!-- 히어로 -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-sub">안녕하세요, 저는</p>
+            <h1 class="hero-name">신선경<span class="dot">.</span></h1>
+            <p class="hero-role">Data Scientist & ML Engineer</p>
+            <p class="hero-desc">데이터 속에서 의미를 찾고,<br>인사이트를 현실로 만드는 데이터 과학자입니다.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                <a href="#contact" class="btn btn-outline">연락하기</a>
+            </div>
         </div>
-        <h1>Lotto Number Generator</h1>
-        <div id="numbers" class="numbers"></div>
-        <button id="generate">Generate Numbers</button>
-        <div style="margin-top: 20px;">
-            <a href="contact.html" style="font-size:0.85em; color:#888; text-decoration:none;">제휴 문의하기</a>
+        <div class="hero-visual">
+            <div class="avatar">
+                <span>SSK</span>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- 소개 -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>데이터를 통해 세상을 더 잘 이해하고 싶다는 생각으로 데이터 과학의 길을 걷고 있습니다.</p>
+                <p>머신러닝 모델 개발부터 데이터 시각화, 통계 분석까지 데이터의 전 과정을 다루며, 복잡한 문제를 단순하고 명확한 인사이트로 전달하는 것을 좋아합니다.</p>
+                <p>끊임없이 배우고 성장하는 것을 즐기며, 데이터로 더 나은 의사결정을 돕는 것을 목표로 합니다.</p>
+            </div>
+            <div class="about-cards">
+                <div class="info-card">
+                    <div class="info-icon">🎓</div>
+                    <div>
+                        <div class="info-label">전공</div>
+                        <div class="info-value">데이터 과학</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <div class="info-label">위치</div>
+                        <div class="info-value">서울, 대한민국</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">💡</div>
+                    <div>
+                        <div class="info-label">관심 분야</div>
+                        <div class="info-value">ML · NLP · 데이터 시각화</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌱</div>
+                    <div>
+                        <div class="info-label">현재 공부 중</div>
+                        <div class="info-value">LLM Fine-tuning · MLOps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section class="section section-alt" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3 class="skill-group-title">Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">ML / DL</h3>
+                <div class="skill-tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">XGBoost</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">Data</h3>
+                <div class="skill-tags">
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Spark</span>
+                    <span class="tag">Tableau</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title">Tools</h3>
+                <div class="skill-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Jupyter</span>
+                    <span class="tag">GCP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로젝트 -->
+    <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-tag">NLP</div>
+                <h3>감성 분석 모델</h3>
+                <p>SNS 텍스트 데이터를 활용한 감성 분류 모델 개발. BERT 기반 파인튜닝으로 92% 정확도 달성.</p>
+                <div class="project-stack">
+                    <span>Python</span><span>PyTorch</span><span>BERT</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-tag">시각화</div>
+                <h3>서울 부동산 대시보드</h3>
+                <p>공공 데이터를 수집·가공하여 서울 아파트 실거래가 트렌드를 인터랙티브 대시보드로 시각화.</p>
+                <div class="project-stack">
+                    <span>Python</span><span>Plotly</span><span>Dash</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-tag">ML</div>
+                <h3>이탈 고객 예측 모델</h3>
+                <p>e-커머스 고객 데이터를 분석해 이탈 가능성을 예측. 앙상블 모델로 AUC 0.91 달성.</p>
+                <div class="project-stack">
+                    <span>Python</span><span>XGBoost</span><span>SHAP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section class="section section-alt" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-desc">새로운 기회나 협업 제안은 언제든지 환영합니다.</p>
+        <div class="contact-links">
+            <a href="mailto:sunkyung@example.com" class="contact-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                이메일 보내기
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 신선경. Designed & Built with ❤️</p>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
