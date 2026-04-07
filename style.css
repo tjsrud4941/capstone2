@@ -510,6 +510,16 @@ body {
     .form-row { grid-template-columns: 1fr; }
 }
 
+/* ── Comments ── */
+#disqus_thread {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-top: 0;
+    max-width: 860px;
+}
+
 /* ── Footer ── */
 .footer {
     text-align: center;
